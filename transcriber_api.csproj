@@ -5,6 +5,7 @@
   <ItemGroup>
     <Compile Remove="src\Controllers\OriginalTasksController.cs" />
     <Compile Remove="src\Controllers\ValuesController.cs" />
+    <Compile Remove="src\LambdaEntryPoint.cs" />
     <Compile Remove="src\Models\Settings.cs" />
     <Compile Remove="src\Models\Task.cs" />
     <Compile Remove="src\Services\TasksService.cs" />
@@ -19,11 +20,6 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.2" />
-    <PackageReference Include="Amazon.Lambda.Core" Version="1.0.0" />
-    <PackageReference Include="Amazon.Lambda.Serialization.Json" Version="1.4.0" />
-    <PackageReference Include="Amazon.Lambda.AspNetCoreServer" Version="2.1.0" />
-    <PackageReference Include="MongoDB.Driver" Version="2.7.3" />
-    <PackageReference Include="MongoDB.Bson" Version="2.7.3" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\web-languageforge\src\SIL.XForge\SIL.XForge.csproj" />
